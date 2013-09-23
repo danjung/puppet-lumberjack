@@ -14,7 +14,7 @@ Installation, make sure service is running and will be started at boot time:
        host  => 'logstashhost',
        port  => '7200',
        files => ['/var/log/messages', '/var/log/thing/*'],
-       ssl_ca_path => "puppet:///path/to/ca.crt",
+       ssl_ca_file => "puppet:///path/to/ca.crt",
      }
 
 Removal/decommissioning:
